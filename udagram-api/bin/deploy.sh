@@ -1,3 +1,3 @@
 cd ./www
-eb use udagram-api-dev
+eb use api-dev
 eb deploy
