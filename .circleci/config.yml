@@ -13,19 +13,19 @@ jobs:
       - run:
           name: Front-End Install
           command: |
-            npm run front-end-install
+            npm run front-end:install
       - run:
           name: Back-End Install
           command: |
-            npm run api-install
+            npm run api:install
       - run:
           name: Front-End Build
           command: |
-            npm run front-end-build
+            npm run front-end:build
       - run:
           name: Back-End Build
           command: |
-            npm run api-build
+            npm run api:build
   deploy:
     docker:
       - image: "cimg/base:stable"
@@ -37,8 +37,8 @@ jobs:
       - run:
           name: Front-End Deploy
           command: |
-            npm run front-end-deploy
+            npm run front-end:deploy
       - run:
           name: Back-End Deploy
           command: |
-            npm run api-deploy
+            npm run api:deploy
