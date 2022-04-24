@@ -11,6 +11,10 @@ jobs:
       - node/install
       - checkout
       - run:
+          name: DevDepend Install
+          command: |
+            npm install
+      - run:
           name: Front-End Install
           command: |
             npm run front-end:install
