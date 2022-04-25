@@ -1,3 +1,1 @@
-cd ./www
-eb use udagram-api
-eb deploy
+aws s3 cp --recursive --acl public-read ./www/deploy.zip s3://my-api/deploy.zip
