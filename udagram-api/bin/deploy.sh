@@ -1,1 +1,1 @@
-aws s3 cp --recursive --acl public-read ./www/deploy.zip s3://my-api/deploy.zip
+aws s3 cp ./www/deploy.zip s3://my-api/
