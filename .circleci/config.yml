@@ -16,12 +16,6 @@ jobs:
           name: DevDepend Install
           command: |
             npm install
-      
-      - run:
-          name: ElasticBeanstalk initiate
-          command: |
-            npm run eb:initiate
-
       - run:
           name: Front-End Install
           command: |
