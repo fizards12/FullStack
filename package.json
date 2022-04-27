@@ -6,7 +6,8 @@
         "frontend:deploy": "cd ./udagram-frontend && npm run deploy",
         "api:install": "cd ./udagram-api && npm install",
         "api:build": "cd ./udagram-api && npm run build",
-        "api:deploy": "cd ./udagram-api && npm run deploy"
+        "api:deploy": "cd ./udagram-api && npm run deploy",
+        "eb:initiate": "chmod +x ./bin/initiate.sh && ./bin/initiate.sh"
     },
     "devDependencies": {
         "@angular/cli": "^13.3.3"
