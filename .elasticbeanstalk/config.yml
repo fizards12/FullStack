@@ -1,12 +1,12 @@
 branch-defaults:
   main:
-    environment: Fullstack-env
+    environment: Apiend-env
 environment-defaults:
-  Fullstack-env:
+  Apiend-env:
     branch: null
     repository: null
 global:
-  application_name: Full-Stack
+  application_name: api-end
   default_ec2_keyname: null
   default_platform: Node.js 16 running on 64bit Amazon Linux 2
   default_region: us-east-1
@@ -14,5 +14,6 @@ global:
   instance_profile: null
   platform_name: null
   platform_version: null
+  profile: eb-cli
   sc: git
   workspace_type: Application
