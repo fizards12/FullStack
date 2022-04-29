@@ -2,12 +2,12 @@
     "scripts": {
         "frontend:install": "cd ./udagram-frontend && npm install",
         "frontend:build": "cd ./udagram-frontend && npm run prod",
-        "frontend:test": "cd ./udagram-frontend && npm run test",
+        "unit:test": "cd ./udagram-frontend && npm run test",
+        "endtoend:test": "cd ./udagram-frontend && npm run e2e",
         "frontend:deploy": "cd ./udagram-frontend && npm run deploy",
         "api:install": "cd ./udagram-api && npm install",
         "api:build": "cd ./udagram-api && npm run build",
-        "api:deploy": "cd ./udagram-api && npm run deploy",
-        "eb:initiate": "chmod +x ./bin/initiate.sh && ./bin/initiate.sh"
+        "api:deploy": "cd ./udagram-api && npm run deploy"
     },
     "devDependencies": {
         "@angular/cli": "^13.3.3"
