@@ -8,6 +8,7 @@ router.use('/feed', FeedRouter);
 router.use('/users', UserRouter);
 
 router.get('/', async (req: Request, res: Response) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.send(`V0`);
 });
 

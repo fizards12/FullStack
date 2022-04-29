@@ -1,5 +1,7 @@
 {
-  "engines": { "node" : "14.16.0" },
+  "engines": {
+    "node": "14.16.0"
+  },
   "name": "udagram-frontend",
   "version": "0.0.1",
   "author": "Ionic Framework",
@@ -8,10 +10,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy":  "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+    "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
   },
   "private": true,
   "dependencies": {

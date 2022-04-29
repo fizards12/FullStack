@@ -15,6 +15,7 @@ const router = express_1.Router();
 router.use('/feed', feed_router_1.FeedRouter);
 router.use('/users', user_router_1.UserRouter);
 router.get('/', (req, res) => __awaiter(this, void 0, void 0, function* () {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.send(`V0`);
 }));
 exports.IndexRouter = router;
