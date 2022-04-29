@@ -28,10 +28,22 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
+
       - run:
           name: Back-End Build
           command: |
             npm run api:build
+      
+      - run:
+          name: Unit Test
+          command: |
+            npm run unit:test
+      - run:
+          name: End-To-End Test
+          command: |
+            npm run endtoend:test
+
+
       - run:
           name: Back-End Deploy
           command: |
