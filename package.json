@@ -6,7 +6,7 @@
         
         "unit:test": "cd ./udagram-frontend && npm run test",
         "endtoend:test": "cd ./udagram-frontend && npm run e2e",
-        
+        "api:test":"cd ./udagram-api && npm run test",
         "api:install": "cd ./udagram-api && npm install",
         "api:build": "cd ./udagram-api && npm run build",
         "api:deploy": "cd ./udagram-api && npm run deploy"
