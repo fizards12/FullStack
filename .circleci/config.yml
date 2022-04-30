@@ -59,7 +59,7 @@ jobs:
 workflows:
   version: 2
   buildAndDeploy:
-    jops:
+    jobs:
       - build:
           filters:
             branches:
