@@ -6,13 +6,14 @@ orbs:
 
 workflows:
   build_and_deploy:
+    jops:
       - build:
-        filters:
-          branches:
-            only:
-              - main
+          filters:
+            branches:
+              only:
+                - main
       - deploy:
-        requires:
+          requires:
           - build
 
 jobs:
