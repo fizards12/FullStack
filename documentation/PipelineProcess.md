@@ -4,7 +4,9 @@
 
 ### `AWS-CLI - Elastic beanstalk - nodejs`
 
-## Jops:
+## ***Jops:***
+
+## **- Build:**
 
 ### Installation:
 
@@ -51,6 +53,8 @@ this folder will have the build version of the "Front-End" which is ready to use
 this command will generate a "www" folder on "udagram-api" folder 
 this folder will have the build version of the "Back-End" which is ready to use to host the Server Side.
 ```
+
+## **- Deploy:**
 ### Deployment:
 
 #### 6. Deploy **Back-End**:
@@ -66,3 +70,11 @@ this command will take the contents of the "www" folder on the "udagram-api" fol
 ```
 this command will take the contents of the "www" folder on the "udagram-frontend" folder and uploading it to the "frnt-end" S3 Bucket which will provide the "User Interface Hosting". 
 ```
+
+## ***WorkFlows:***
+
+#### **this is used to:**
+1. check if any push happened on the main branch to start building with the jobs specified on the **config.yml** 
+1. doing the jobs sequentially:
+   1. Build job.
+   1. deploy job.  
