@@ -67,4 +67,4 @@ workflows:
                 - main
       - deploy:
           requires:
-          - build
+            - build
