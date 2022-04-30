@@ -57,7 +57,7 @@ jobs:
             npm run frontend:deploy
 
 workflows:
-  version: 2.1
+  version: 2
   buildAndDeploy:
     jops:
       - build:
