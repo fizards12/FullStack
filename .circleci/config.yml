@@ -5,16 +5,15 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@1.0.0
 
 workflows:
-  build_and_deploy:
-    jops:
-      - build:
-          filters:
-            branches:
-              only:
-                - main
-      - deploy:
-          requires:
-          - build
+  jops:
+    - build:
+        filters:
+          branches:
+            only:
+              - main
+    - deploy:
+        requires:
+        - build
 
 jobs:
   build:
