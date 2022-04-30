@@ -23,6 +23,8 @@ AWS S3 Service is used to provide the (Angular) Web Hosting.
 
 
 Link: http://frnt-side.s3-website-us-east-1.amazonaws.com
+
+Link of deploy
 ```
 ## Built With
 
